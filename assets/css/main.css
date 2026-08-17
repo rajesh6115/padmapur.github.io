@@ -3,15 +3,16 @@
    ============================================ */
 
 :root {
-  --primary: #2e7d32;
-  --primary-dark: #1b5e20;
-  --primary-light: #e8f5e9;
-  --accent: #f9a825;
-  --bg: #f8f6f1;
+  --primary: #1565c0;
+  --primary-dark: #0d3f7a;
+  --primary-light: #e3f2fd;
+  --accent: #d6336c;
+  --accent-light: #fdecf1;
+  --bg: #f5f8fc;
   --surface: #ffffff;
-  --text: #2a3d4c;
-  --muted: #6b7a85;
-  --border: #e6e1d8;
+  --text: #1f2d3d;
+  --muted: #64748b;
+  --border: #dfe7f0;
   --radius: 14px;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -30,8 +31,8 @@ a {
 .placeholder-note {
   font-size: 0.8em;
   color: var(--accent);
-  background: #fff8e1;
-  border: 1px dashed #e0b93a;
+  background: var(--accent-light);
+  border: 1px dashed #e8a5be;
   border-radius: 8px;
   padding: 4px 10px;
   display: inline-block;
@@ -69,19 +70,19 @@ a {
   font-size: 2.6rem;
 }
 .hero p.lead {
-  color: #e8f5e9;
+  color: #dbeafe;
   max-width: 620px;
   margin: 12px auto 28px;
 }
 .hero .btn-accent {
   background: var(--accent);
   border-color: var(--accent);
-  color: #4a2c00;
+  color: #fff;
   font-weight: 700;
 }
 .hero .btn-accent:hover {
-  background: #ffb300;
-  border-color: #ffb300;
+  background: #c2185b;
+  border-color: #c2185b;
 }
 .hero .btn-outline-light:hover {
   color: var(--primary-dark);
@@ -299,8 +300,8 @@ a {
     45deg,
     var(--primary-light),
     var(--primary-light) 10px,
-    #f1ede3 10px,
-    #f1ede3 20px
+    var(--accent-light) 10px,
+    var(--accent-light) 20px
   );
   display: flex;
   flex-direction: column;
@@ -311,7 +312,7 @@ a {
   font-size: 0.85rem;
   font-weight: 600;
   padding: 12px;
-  border: 1px dashed #c8dcc9;
+  border: 1px dashed #bcd6f0;
 }
 .gallery-box .icon {
   font-size: 1.8rem;
@@ -335,7 +336,7 @@ a {
 /* ---------- Footer ---------- */
 footer.site-footer {
   background: var(--primary-dark);
-  color: #d7e8d8;
+  color: #cfe3fb;
   padding: 32px 16px;
   text-align: center;
   font-size: 0.9rem;
